@@ -1,1 +1,1 @@
-# empty-template
+# A Node.js project
