@@ -1,4 +1,6 @@
 {
-  "name": "node-template",
-  "packageManager": "yarn@4.0.2"
+  "name": "node",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module"
 }
