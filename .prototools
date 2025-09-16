@@ -1,5 +1,4 @@
 bun = "1.2.22"
-pnpm = "10.16.1"
 biome = "1.9.4"
 
 [plugins.tools]
