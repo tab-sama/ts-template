@@ -1,2 +1,6 @@
 node = "24.8.0"
 pnpm = "10.16.1"
+biome = "1.9.4"
+
+[plugins.tools]
+biome = "https://raw.githubusercontent.com/Phault/proto-toml-plugins/main/biome/plugin.toml"
