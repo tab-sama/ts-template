@@ -1,6 +1,11 @@
 {
-  "name": "node",
-  "version": "0.0.0",
+  "name": "node-template",
+  "type": "module",
   "private": true,
-  "type": "module"
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
 }
