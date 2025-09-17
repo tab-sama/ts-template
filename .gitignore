@@ -12,8 +12,8 @@
 *.swo
 
 # Environment variables files
-.env
 .env*
+!.env.example
 
 # Logs
 logs

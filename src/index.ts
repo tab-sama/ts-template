@@ -1,5 +1,7 @@
+import { config } from "./config.js";
+
 const server = Bun.serve({
-	port: 3000,
+	port: config.port,
 	fetch(request) {
 		const url = new URL(request.url);
 

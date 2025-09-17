@@ -14,5 +14,11 @@
 	},
 	"peerDependencies": {
 		"typescript": "^5"
+	},
+	"dependencies": {
+		"@types/convict": "^6.1.6",
+		"@types/dotenv": "^8.2.3",
+		"convict": "^6.2.4",
+		"dotenv": "^17.2.2"
 	}
 }
