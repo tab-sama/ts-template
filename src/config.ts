@@ -1,7 +1,4 @@
 import convict from "convict";
-import dotenv from "dotenv";
-
-dotenv.config();
 
 export interface ServerConfig {
 	port: number;
