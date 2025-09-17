@@ -19,6 +19,7 @@ This template comes pre-configured with:
 - 🌐 **HTTP Server**: Simple Bun server with health endpoint example
 - 📦 **ES Modules**: Modern module system
 - 🚨 **Git Integration**: Pre-configured with Biome VCS integration
+- 🪝 **Git Hooks**: Lefthook for automated quality checks
 - 📝 **GitHub Templates**: CODE_OF_CONDUCT.md, SECURITY.md, and LICENSE included
 - ⚡ **Proto Tool Manager**: Automated tool management with [moonrepo proto](https://moonrepo.dev/proto)
 
@@ -68,6 +69,7 @@ bun run start
 | `bun run dev`    | Start development server with file watching |
 | `bun run lint`   | Run Biome linter                            |
 | `bun run format` | Format code with Biome                      |
+| `bun run prepare`| Install Lefthook Git hooks                  |
 
 ### 🧹 Code Quality
 
@@ -79,6 +81,64 @@ bun run lint
 
 # Auto-fix linting issues and format code
 bun run format
+```
+
+### 🪝 Git Hooks & Conventional Commits
+
+This template includes **Lefthook** for automated Git hooks and **Commitlint** for enforcing Conventional Commits:
+
+#### Automatic Quality Checks
+
+Git hooks will automatically run on:
+
+- **Pre-commit**: Format code, run linter, and type-check
+- **Commit-msg**: Validate commit message format
+- **Pre-push**: Final lint and type checks
+
+#### Conventional Commits
+
+All commit messages must follow the [Conventional Commits](https://www.conventionalcommits.org/) specification:
+
+```bash
+# ✅ Valid commit messages
+git commit -m "feat: add user authentication"
+git commit -m "fix: resolve memory leak in data processing"
+git commit -m "docs: update API documentation"
+git commit -m "refactor: simplify error handling logic"
+
+# ❌ Invalid commit messages
+git commit -m "add feature"           # Missing type
+git commit -m "Fix bug"              # Wrong case
+git commit -m "feat!: breaking change" # Use BREAKING CHANGE footer instead
+```
+
+**Available commit types:**
+- `feat` - New features
+- `fix` - Bug fixes
+- `docs` - Documentation changes
+- `style` - Code style changes (formatting, etc.)
+- `refactor` - Code refactoring
+- `perf` - Performance improvements
+- `test` - Adding or updating tests
+- `build` - Build system changes
+- `ci` - CI configuration changes
+- `chore` - Other changes (maintenance, etc.)
+- `revert` - Reverting previous commits
+
+#### Managing Git Hooks
+
+```bash
+# Install hooks (automatically runs after `bun install`)
+bun run prepare
+
+# Skip hooks for a single commit (use sparingly)
+git commit -m "feat: add feature" --no-verify
+
+# Temporarily disable hooks
+lefthook uninstall
+
+# Re-enable hooks
+lefthook install
 ```
 
 ### 📁 Project Structure

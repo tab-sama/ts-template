@@ -1,0 +1,11 @@
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      glob: "*.{js,ts,tsx,jsx}"
+      run: bun run lint
+
+pre-push:
+  commands:
+    lint:
+      run: bun run lint

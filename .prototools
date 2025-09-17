@@ -1,5 +1,7 @@
 bun = "1.2.22"
 biome = "1.9.4"
+lefthook = "1.13.0"
 
 [plugins.tools]
 biome = "https://raw.githubusercontent.com/Phault/proto-toml-plugins/main/biome/plugin.toml"
+lefthook = "https://raw.githubusercontent.com/ageha734/proto-plugins/refs/heads/master/toml/lefthook.toml"
