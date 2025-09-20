@@ -25,7 +25,7 @@ This template comes pre-configured with:
 
 ### Prerequisites
 
-- [proto](https://moonrepo.dev/proto) - A multi-language version manager that will manage all required tools
+- [proto](https://moonrepo.dev/proto): A multi-language version manager that will manage all required tools
 - Alternatively, you can install tools separately:
     - [Bun](https://bun.sh/)
     - [Biome](https://biomejs.dev/)
@@ -83,7 +83,7 @@ bun run format
 
 ### 🪝 Git Hooks & Conventional Commits
 
-This template includes **Lefthook** for automated Git hooks and **Commitlint** for enforcing Conventional Commits:
+This template includes **Lefthook** for automated Git hooks
 
 #### Automatic Quality Checks
 
@@ -166,7 +166,7 @@ The `tsconfig.json` is configured for modern TypeScript development:
 
 The `biome.json` includes:
 
-- All recommended rules enabled
+- All recommended rules are enabled
 - Tab indentation (configurable)
 - Git integration
 - Import organization
