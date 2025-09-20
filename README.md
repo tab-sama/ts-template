@@ -16,8 +16,6 @@ This template comes pre-configured with:
 - 📘 **TypeScript**: Type-safe JavaScript with modern ES features
 - 🧹 **Biome**: Fast linter and formatter (Prettier + ESLint replacement)
 - 🔧 **Modern Configuration**: ESNext target with strict type checking
-- 🌐 **HTTP Server**: Simple Bun server with health endpoint example
-- 📦 **ES Modules**: Modern module system
 - 🚨 **Git Integration**: Pre-configured with Biome VCS integration
 - 🪝 **Git Hooks**: Lefthook for automated quality checks
 - 📝 **GitHub Templates**: CODE_OF_CONDUCT.md, SECURITY.md, and LICENSE included
@@ -29,8 +27,8 @@ This template comes pre-configured with:
 
 - [proto](https://moonrepo.dev/proto) - A multi-language version manager that will manage all required tools
 - Alternatively, you can install tools separately:
-    - [Bun](https://bun.sh/) (latest version)
-    - [Biome](https://biomejs.dev/) (latest version)
+    - [Bun](https://bun.sh/)
+    - [Biome](https://biomejs.dev/)
 
 ### Installation
 
@@ -63,13 +61,13 @@ bun run start
 
 ### Available Scripts
 
-| Script           | Description                                 |
-|------------------|---------------------------------------------|
-| `bun run start`  | Start the production server                 |
-| `bun run dev`    | Start development server with file watching |
-| `bun run lint`   | Run Biome linter                            |
-| `bun run format` | Format code with Biome                      |
-| `bun run prepare`| Install Lefthook Git hooks                  |
+| Script            | Description                                 |
+|-------------------|---------------------------------------------|
+| `bun run start`   | Start the production server                 |
+| `bun run dev`     | Start development server with file watching |
+| `bun run lint`    | Run Biome linter                            |
+| `bun run format`  | Format code with Biome                      |
+| `bun run prepare` | Install Lefthook Git hooks                  |
 
 ### 🧹 Code Quality
 
@@ -113,6 +111,7 @@ git commit -m "feat!: breaking change" # Use BREAKING CHANGE footer instead
 ```
 
 **Available commit types:**
+
 - `feat` - New features
 - `fix` - Bug fixes
 - `docs` - Documentation changes
