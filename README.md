@@ -18,6 +18,7 @@ This template comes pre-configured with:
 - 🔧 **Modern Configuration**: ESNext target with strict type checking
 - 🚨 **Git Integration**: Pre-configured with Biome VCS integration
 - 🪝 **Git Hooks**: Lefthook for automated quality checks
+- 📋 **Conventional Commits**: Cocogitto (cog) for commit message validation and changelog generation
 - 📝 **GitHub Templates**: CODE_OF_CONDUCT.md, SECURITY.md, and LICENSE included
 - ⚡ **Proto Tool Manager**: Automated tool management with [moonrepo proto](https://moonrepo.dev/proto)
 
@@ -27,8 +28,10 @@ This template comes pre-configured with:
 
 - [proto](https://moonrepo.dev/proto): A multi-language version manager that will manage all required tools
 - Alternatively, you can install tools separately:
-    - [Bun](https://bun.sh/)
-    - [Biome](https://biomejs.dev/)
+    - [Bun](https://bun.sh/): Ultra-fast JavaScript runtime and package manager
+    - [Biome](https://biomejs.dev/): Fast linter and formatter (Prettier + ESLint replacement)
+    - [Cocogitto](https://github.com/cocogitto/cocogitto): Conventional commits tooling
+    - [Lefthook](https://github.com/evilmartians/lefthook): Fast and powerful Git hooks manager
 
 ### Installation
 
@@ -40,7 +43,7 @@ This template comes pre-configured with:
    ```
 3. **Install tools and dependencies**:
    ```bash
-   # Install all required tools (bun, biome) using proto
+   # Install all required tools (bun, biome, cog, lefthook) using proto
    proto install
    
    # Install project dependencies
@@ -203,6 +206,9 @@ This project is licensed under the Apache License—see the [LICENSE](LICENSE) f
 - [Bun](https://bun.sh/) for the amazing runtime
 - [Biome](https://biomejs.dev/) for fast linting and formatting
 - [TypeScript](https://www.typescriptlang.org/) for type safety
+- [Lefthook](https://github.com/evilmartians/lefthook) for fast and powerful Git hooks management
+- [Cocogitto](https://github.com/cocogitto/cocogitto) for conventional commits tooling and changelog generation
+- [Proto](https://moonrepo.dev/proto) for multi-language version management
 
 ---
 
