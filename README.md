@@ -42,9 +42,26 @@ This template comes pre-configured with:
    cd your-project-name
    ```
 3. **Install tools and dependencies**:
+   
+   **Option A: Automated Setup (Recommended)**
    ```bash
+   # Run the automated installation script
+   ./scripts/install.sh
+   
+   # Install project dependencies
+   bun install
+   ```
+   
+   **Option B: Manual Setup**
+   ```bash
+   # Install proto (if not already installed)
+   bash -c "$(curl -fsSL https://moonrepo.dev/install/proto.sh)"
+   
    # Install all required tools (bun, biome, cog, lefthook) using proto
-   proto install
+   proto use
+   
+   # Install Git hooks with Lefthook
+   lefthook install
    
    # Install project dependencies
    bun install
