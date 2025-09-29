@@ -11,13 +11,13 @@
 		"format": "biome check . --write"
 	},
 	"devDependencies": {
-		"@types/bun": "latest"
+		"@types/bun": "latest",
+		"@types/convict": "^6.1.6"
 	},
 	"peerDependencies": {
 		"typescript": "^5"
 	},
 	"dependencies": {
-		"@types/convict": "^6.1.6",
 		"convict": "^6.2.4"
 	}
 }
