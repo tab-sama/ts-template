@@ -1,15 +1,10 @@
 name: Documentation Improvement
 description: Suggest improvements to our documentation
 title: "docs: "
-labels: ["documentation"]
-assignees: []
+labels: [ "documentation" ]
+assignees: [ ]
 
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to help us improve our documentation!
-
   - type: dropdown
     id: doc-type
     attributes:
@@ -60,22 +55,3 @@ body:
       description: Add any other context about the documentation improvement here.
     validations:
       required: false
-
-  - type: dropdown
-    id: willing-to-help
-    attributes:
-      label: Are you willing to help improve this documentation?
-      options:
-        - Yes, I can submit a PR with the changes
-        - No, I'm just suggesting the improvement
-    validations:
-      required: true
-
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this documentation improvement, you agree to follow our [Code of Conduct](../CODE_OF_CONDUCT.md)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true

@@ -5,20 +5,6 @@ labels: ["bug", "triage"]
 assignees: []
 
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
-
-  - type: input
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      placeholder: e.g., v1.0.0
-    validations:
-      required: true
-
   - type: textarea
     id: what-happened
     attributes:
@@ -80,12 +66,3 @@ body:
     attributes:
       label: Additional context
       description: Add any other context about the problem here.
-
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](../CODE_OF_CONDUCT.md)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
